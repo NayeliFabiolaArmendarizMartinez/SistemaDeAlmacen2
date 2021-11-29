@@ -30,8 +30,8 @@ namespace SistemaDeAlmacen2
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lbTituloProductos = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbTituloProductos = new System.Windows.Forms.Label();
             this.lbProducto = new System.Windows.Forms.Label();
             this.lbCantidad = new System.Windows.Forms.Label();
             this.lbCategoria = new System.Windows.Forms.Label();
@@ -44,9 +44,7 @@ namespace SistemaDeAlmacen2
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
             this.rbtnComestibles = new System.Windows.Forms.RadioButton();
-            this.rbtnHigiene = new System.Windows.Forms.RadioButton();
-            this.rbtnLimpieza = new System.Windows.Forms.RadioButton();
-            this.rbtnElectronicos = new System.Windows.Forms.RadioButton();
+            this.rbtnMateriales = new System.Windows.Forms.RadioButton();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
@@ -66,18 +64,6 @@ namespace SistemaDeAlmacen2
             this.panel1.Size = new System.Drawing.Size(882, 49);
             this.panel1.TabIndex = 0;
             // 
-            // lbTituloProductos
-            // 
-            this.lbTituloProductos.AutoSize = true;
-            this.lbTituloProductos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbTituloProductos.ForeColor = System.Drawing.Color.Navy;
-            this.lbTituloProductos.Location = new System.Drawing.Point(44, 68);
-            this.lbTituloProductos.Name = "lbTituloProductos";
-            this.lbTituloProductos.Size = new System.Drawing.Size(58, 19);
-            this.lbTituloProductos.TabIndex = 0;
-            this.lbTituloProductos.Text = "Datos ";
-            this.lbTituloProductos.Click += new System.EventHandler(this.lbTituloProductos_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -88,6 +74,17 @@ namespace SistemaDeAlmacen2
             this.label1.Size = new System.Drawing.Size(115, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Productos";
+            // 
+            // lbTituloProductos
+            // 
+            this.lbTituloProductos.AutoSize = true;
+            this.lbTituloProductos.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbTituloProductos.ForeColor = System.Drawing.Color.Navy;
+            this.lbTituloProductos.Location = new System.Drawing.Point(44, 68);
+            this.lbTituloProductos.Name = "lbTituloProductos";
+            this.lbTituloProductos.Size = new System.Drawing.Size(58, 19);
+            this.lbTituloProductos.TabIndex = 0;
+            this.lbTituloProductos.Text = "Datos ";
             // 
             // lbProducto
             // 
@@ -108,7 +105,6 @@ namespace SistemaDeAlmacen2
             this.lbCantidad.Size = new System.Drawing.Size(49, 16);
             this.lbCantidad.TabIndex = 2;
             this.lbCantidad.Text = "Cantidad";
-            this.lbCantidad.Click += new System.EventHandler(this.lbCantidad_Click);
             // 
             // lbCategoria
             // 
@@ -124,7 +120,7 @@ namespace SistemaDeAlmacen2
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(2, 290);
+            this.label4.Location = new System.Drawing.Point(1, 243);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(183, 16);
             this.label4.TabIndex = 4;
@@ -134,7 +130,7 @@ namespace SistemaDeAlmacen2
             // 
             this.lbPCompra.AutoSize = true;
             this.lbPCompra.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPCompra.Location = new System.Drawing.Point(1, 335);
+            this.lbPCompra.Location = new System.Drawing.Point(1, 288);
             this.lbPCompra.Name = "lbPCompra";
             this.lbPCompra.Size = new System.Drawing.Size(90, 16);
             this.lbPCompra.TabIndex = 5;
@@ -144,7 +140,7 @@ namespace SistemaDeAlmacen2
             // 
             this.lbPVenta.AutoSize = true;
             this.lbPVenta.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPVenta.Location = new System.Drawing.Point(1, 380);
+            this.lbPVenta.Location = new System.Drawing.Point(1, 333);
             this.lbPVenta.Name = "lbPVenta";
             this.lbPVenta.Size = new System.Drawing.Size(81, 16);
             this.lbPVenta.TabIndex = 6;
@@ -159,14 +155,14 @@ namespace SistemaDeAlmacen2
             // 
             // txtPrecioVenta
             // 
-            this.txtPrecioVenta.Location = new System.Drawing.Point(2, 399);
+            this.txtPrecioVenta.Location = new System.Drawing.Point(1, 352);
             this.txtPrecioVenta.Name = "txtPrecioVenta";
             this.txtPrecioVenta.Size = new System.Drawing.Size(183, 23);
             this.txtPrecioVenta.TabIndex = 8;
             // 
             // txtPrecioCompra
             // 
-            this.txtPrecioCompra.Location = new System.Drawing.Point(2, 354);
+            this.txtPrecioCompra.Location = new System.Drawing.Point(1, 307);
             this.txtPrecioCompra.Name = "txtPrecioCompra";
             this.txtPrecioCompra.Size = new System.Drawing.Size(183, 23);
             this.txtPrecioCompra.TabIndex = 9;
@@ -180,7 +176,7 @@ namespace SistemaDeAlmacen2
             // 
             // dtpFechaIngreso
             // 
-            this.dtpFechaIngreso.Location = new System.Drawing.Point(1, 309);
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(2, 262);
             this.dtpFechaIngreso.Name = "dtpFechaIngreso";
             this.dtpFechaIngreso.Size = new System.Drawing.Size(184, 23);
             this.dtpFechaIngreso.TabIndex = 11;
@@ -188,7 +184,7 @@ namespace SistemaDeAlmacen2
             // rbtnComestibles
             // 
             this.rbtnComestibles.AutoSize = true;
-            this.rbtnComestibles.Location = new System.Drawing.Point(21, 196);
+            this.rbtnComestibles.Location = new System.Drawing.Point(1, 196);
             this.rbtnComestibles.Name = "rbtnComestibles";
             this.rbtnComestibles.Size = new System.Drawing.Size(90, 19);
             this.rbtnComestibles.TabIndex = 12;
@@ -196,38 +192,16 @@ namespace SistemaDeAlmacen2
             this.rbtnComestibles.Text = "Comestibles";
             this.rbtnComestibles.UseVisualStyleBackColor = true;
             // 
-            // rbtnHigiene
+            // rbtnMateriales
             // 
-            this.rbtnHigiene.AutoSize = true;
-            this.rbtnHigiene.Location = new System.Drawing.Point(21, 218);
-            this.rbtnHigiene.Name = "rbtnHigiene";
-            this.rbtnHigiene.Size = new System.Drawing.Size(107, 19);
-            this.rbtnHigiene.TabIndex = 13;
-            this.rbtnHigiene.TabStop = true;
-            this.rbtnHigiene.Text = "Higiene/Belleza";
-            this.rbtnHigiene.UseVisualStyleBackColor = true;
-            // 
-            // rbtnLimpieza
-            // 
-            this.rbtnLimpieza.AutoSize = true;
-            this.rbtnLimpieza.Location = new System.Drawing.Point(21, 243);
-            this.rbtnLimpieza.Name = "rbtnLimpieza";
-            this.rbtnLimpieza.Size = new System.Drawing.Size(72, 19);
-            this.rbtnLimpieza.TabIndex = 14;
-            this.rbtnLimpieza.TabStop = true;
-            this.rbtnLimpieza.Text = "Limpieza";
-            this.rbtnLimpieza.UseVisualStyleBackColor = true;
-            // 
-            // rbtnElectronicos
-            // 
-            this.rbtnElectronicos.AutoSize = true;
-            this.rbtnElectronicos.Location = new System.Drawing.Point(21, 268);
-            this.rbtnElectronicos.Name = "rbtnElectronicos";
-            this.rbtnElectronicos.Size = new System.Drawing.Size(89, 19);
-            this.rbtnElectronicos.TabIndex = 15;
-            this.rbtnElectronicos.TabStop = true;
-            this.rbtnElectronicos.Text = "Electronicos";
-            this.rbtnElectronicos.UseVisualStyleBackColor = true;
+            this.rbtnMateriales.AutoSize = true;
+            this.rbtnMateriales.Location = new System.Drawing.Point(1, 221);
+            this.rbtnMateriales.Name = "rbtnMateriales";
+            this.rbtnMateriales.Size = new System.Drawing.Size(79, 19);
+            this.rbtnMateriales.TabIndex = 13;
+            this.rbtnMateriales.TabStop = true;
+            this.rbtnMateriales.Text = "Materiales";
+            this.rbtnMateriales.UseVisualStyleBackColor = true;
             // 
             // BtnAgregar
             // 
@@ -240,6 +214,7 @@ namespace SistemaDeAlmacen2
             this.BtnAgregar.TabIndex = 16;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.UseVisualStyleBackColor = false;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // BtnModificar
             // 
@@ -252,6 +227,7 @@ namespace SistemaDeAlmacen2
             this.BtnModificar.TabIndex = 17;
             this.BtnModificar.Text = "Modificar";
             this.BtnModificar.UseVisualStyleBackColor = false;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // BtnEliminar
             // 
@@ -264,6 +240,7 @@ namespace SistemaDeAlmacen2
             this.BtnEliminar.TabIndex = 18;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // dgvProductos
             // 
@@ -273,6 +250,7 @@ namespace SistemaDeAlmacen2
             this.dgvProductos.RowTemplate.Height = 25;
             this.dgvProductos.Size = new System.Drawing.Size(669, 435);
             this.dgvProductos.TabIndex = 19;
+            this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
             // 
             // lbBuscar
             // 
@@ -291,6 +269,7 @@ namespace SistemaDeAlmacen2
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(437, 23);
             this.txtBuscar.TabIndex = 21;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // FrmProductos
             // 
@@ -298,16 +277,14 @@ namespace SistemaDeAlmacen2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(885, 543);
+            this.Controls.Add(this.rbtnMateriales);
+            this.Controls.Add(this.rbtnComestibles);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.lbBuscar);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.BtnAgregar);
-            this.Controls.Add(this.rbtnElectronicos);
-            this.Controls.Add(this.rbtnLimpieza);
-            this.Controls.Add(this.rbtnHigiene);
-            this.Controls.Add(this.rbtnComestibles);
             this.Controls.Add(this.dtpFechaIngreso);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.txtPrecioCompra);
@@ -323,6 +300,7 @@ namespace SistemaDeAlmacen2
             this.Controls.Add(this.lbTituloProductos);
             this.Name = "FrmProductos";
             this.Text = "FrmProductos";
+            this.Load += new System.EventHandler(this.FrmProductos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
@@ -348,9 +326,7 @@ namespace SistemaDeAlmacen2
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
         private System.Windows.Forms.RadioButton rbtnComestibles;
-        private System.Windows.Forms.RadioButton rbtnHigiene;
-        private System.Windows.Forms.RadioButton rbtnLimpieza;
-        private System.Windows.Forms.RadioButton rbtnElectronicos;
+        private System.Windows.Forms.RadioButton rbtnMateriales;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnEliminar;

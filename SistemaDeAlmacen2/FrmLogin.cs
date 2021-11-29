@@ -28,8 +28,8 @@ namespace SistemaDeAlmacen2
             if (txtUsuario.Text == "Admin" && (txtContraseña.Text == "1234"))
             {
                 
-                FrmLogin frmLogin = new FrmLogin();
-                frmLogin.Show();
+                FrmMenu frmMenu = new FrmMenu();
+                frmMenu.Show();
             }
 
             else
